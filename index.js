@@ -4,5 +4,5 @@ function findMatching(drivers, string){
 }
 
 function fuzzyMatch(drivers, string){
-  return drivers.filter(driver => driver === driver.startsWith("string"))
+  return drivers.filter(driver => driver.includes(driver.startsWith("string")))
 }
